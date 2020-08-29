@@ -150,5 +150,6 @@ for epoch in range(epochs):
             accuracy=100*correct//total
             accuracies.append(accuracy)
 print('Mean accuracy from last 25 iterations: {}, standard deviation {}'.format(numpy.mean(accuracies), numpy.std(accuracies)))
+print(len(accuracies))
 # path='./feedforward.pth'
 # torch.save(model, path)
